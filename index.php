@@ -93,8 +93,8 @@ if($arrJson['events'][0]['message']['text'] == "สวัสดี"){
   $arrPostData = array();  
   $img_url = "https://cdn.shopify.com/s/files/1/0379/7669/products/sampleset2_1024x1024.JPG?v=1458740363";
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
-  $arrPostData['messages'][0]['type'] = "$img_url";
-  $arrPostData['messages'][0]['$img_url'] = "$img_url";
+  $arrPostData['messages'][0]['type'] = "img";
+  $arrPostData['messages'][0]['img'] = "$img_url";
 
 }else{
   $arrPostData = array();
