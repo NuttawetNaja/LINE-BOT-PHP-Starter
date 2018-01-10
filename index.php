@@ -91,7 +91,7 @@ if($arrJson['events'][0]['message']['text'] == "สวัสดี"){
   
 }else if($arrJson['events'][0]['message']['text'] == "ซอง"){
   $arrPostData = array();  
-  $img_url = "https://cdn.shopify.com/s/files/1/0379/7669/products/sampleset2_1024x1024.JPG?v=1458740363";
+  $img_url = "https://mekoclinic.com/wp-content/uploads/2016/08/%E0%B8%97%E0%B8%B3%E0%B8%99%E0%B8%A1%20%E0%B8%AB%E0%B8%A1%E0%B8%AD%E0%B8%81%E0%B8%B4%E0%B8%88%20%E0%B9%80%E0%B8%A1%E0%B9%82%E0%B8%81%E0%B8%B0%E0%B8%84%E0%B8%A5%E0%B8%B4%E0%B8%99%E0%B8%B4%E0%B8%81%20%E0%B8%84%E0%B8%B8%E0%B8%93%E0%B8%99%E0%B8%B8%E0%B8%81%E0%B8%99%E0%B8%B4%E0%B8%81.jpg";
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
   $arrPostData['messages'][0]['text'] = "$img_url";
