@@ -91,7 +91,7 @@ if($arrJson['events'][0]['message']['text'] == "สวัสดี"){
   
 }else if($arrJson['events'][0]['message']['text'] == "ซอง"){
   $arrPostData = array();  
-  $img_url = "https://cdn.shopify.com/s/files/1/0379/7669/products/sampleset2_1024x1024.JPG?v=1458740363";
+  $img_url = "http://www.rakluke.com/file_manager/member/51158/Sabina%20brestfeeding/IMG_9388.JPG";
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "img";
   $arrPostData['messages'][0]['img'] = "$img_url";
