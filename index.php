@@ -269,6 +269,14 @@ if($arrJson['events'][0]['message']['text'] == "สวัสดีครับ")
   $arrPostData['messages'][0]['type'] = "text";
   $arrPostData['messages'][0]['text'] = "ว่าตัวเองทำไมวะ บ้าป๊ะ!!!!!";
 
+    }else if($arrJson['events'][0]['message']['text'] == "นู่"){
+  $arrPostData = array();
+  $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
+  $arrPostData['messages'][0]['type'] = "text";
+  $arrPostData['messages'][0]['text'] = "สวยที่สุด OMG!!!";
+
+  
+  
 }else{
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
